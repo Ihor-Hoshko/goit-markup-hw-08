@@ -1,0 +1,29 @@
+.button {
+    display: block;
+    color: var(--button-hover-text-color);
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    
+    border-radius: 4px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &.current {
+          color: var(--button-hover-text-color);
+          background-color: var(--button-hover-color);
+    }
+        &:hover,
+        &:focus {
+          color: var(--button-hover-text-color);
+          background-color: #188ce8;}
+  
+  }
+
+    
+      
+      
