@@ -840,6 +840,13 @@ img {
 .work {
   padding-top: 0px;
   padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: flex;
+  }
 }
 
 .work-list {
