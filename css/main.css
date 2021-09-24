@@ -419,10 +419,28 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section {
@@ -493,27 +511,31 @@ img {
 .hero-list {
   list-style: none;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px 118px 60px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Imgmin.jpg);
   background-size: cover;
   background-position: center;
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-list__title {
   color: var(--button-hover-text-color);
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-align: center;
-  line-height: 1.3;
+  line-height: calc(42 / 26);
   margin-bottom: 30px;
   margin-top: 0px;
-  min-width: 696px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-list__title {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero-list__button {
