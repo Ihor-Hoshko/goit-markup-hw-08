@@ -65,7 +65,25 @@
       bottom: -17px;
     }
   }
-  
+  .open-button {
+    display: block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  color: #212121;
+    &:hover,
+    &:focus {
+      fill: var(--button-hover-color);
+    } 
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
 .mobile-menu {
   width: 100vw;
   height: 100vh;
@@ -120,6 +138,10 @@ color: var(--button-hover-color);
   border: none;
   background-color: white;
   color: #212121;
+    &:hover,
+    &:focus {
+      fill: var(--button-hover-color);
+    } 
 }
 .icon-phone {
     width: 10px;

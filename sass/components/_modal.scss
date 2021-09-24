@@ -22,7 +22,7 @@
     display: flex;
     padding: 40px 40px;
     height: 581px;
-    width: 521px;
+    width: 450px;
     background-color: var(--button-hover-text-color);
     position: absolute;
     top: 50%;
@@ -59,5 +59,3 @@
   &:focus {
     fill: var(--button-hover-color);}
   }
-  
-  

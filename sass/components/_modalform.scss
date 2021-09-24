@@ -1,5 +1,4 @@
-
-  .modal-form-name {
+.modal-form-name {
     margin-bottom: 10px;
     position: relative;
   }
@@ -25,18 +24,35 @@
     fill: var(--button-hover-color);}
   }
   
-  
+  .modal-form-name {
+    @media  screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column; }
+  }
   .modal-form-phone {
     margin-bottom: 10px;
+    @media  screen and (min-width: 480px){
+    display: flex;
+    flex-direction: column;}
   }
   .modal-form-mail {
     margin-bottom: 10px;
+    @media  screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;}
   }
   .modal-form-comment {
     margin-bottom: 20px;
+    @media  screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;}
   }
   .modal-form-agreement {
     margin-bottom: 30px;
+    @media  screen and (min-width: 480px) {
+    display: flex;
+    max-width: 425px;
+    }
   }
   .modal-form-submit {
     display: flex;
@@ -44,7 +60,7 @@
     align-items: center;
   }
   .input-modal {
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -72,7 +88,7 @@
     margin-bottom: 12px;
   }
   .textarea-modal {
-    width: 448px;
+    width: 370px;
     height: 120px;
     margin-top: 4px;
     border-radius: 4px;
@@ -113,20 +129,29 @@
     align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: calc(12 / 14);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     justify-content: center;
+     @media  screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(14 / 24);
+    }
   }
   .accept-agreement-link {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--button-hover-color);
     outline: none;
+    @media  screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(14 / 24);
+    }
   }
   .label-accept-check {
     display: flex;
@@ -147,4 +172,3 @@
         border: none;
         box-shadow: none;}
       }
-  
