@@ -10,6 +10,9 @@
     font-size: 36px;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
      @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
     }
@@ -24,11 +27,12 @@
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
+      
     }
     
     @media screen and (min-width: 1200px) {
       display: flex;
-      margin-bottom: 50px;
+      
     }
   }
 
@@ -36,7 +40,7 @@
     margin-top: 30px;
     
     @media screen and (min-width: 768px) {
-      width: calc((100% - 2 * 30px) / 2);
+      width: calc(100% / 2 - 30px);
       margin: 15px;
     }
      @media screen and (min-width: 1200px) {
