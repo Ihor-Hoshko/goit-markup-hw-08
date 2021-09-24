@@ -11,15 +11,24 @@
   .all-nav {
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
   }
   
   .nav-list {
-    display: flex;
+    display: none;
     list-style: none;
     padding-left: 0px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
+
  .nav-list__item + .nav-list__item {
-    margin-left: 50px;
+      margin-left: 50px;  
   }
   
   .nav-list__link {
@@ -52,7 +61,7 @@
       background-color: var(--button-hover-color);
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: -17px;
     }
   }
   

@@ -118,23 +118,44 @@ img {
 .logo-web-header {
   color: var(--button-hover-color);
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: calc(33 \ 24);
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-web-header {
+    font-size: 26px;
+  }
 }
 
 .logo-studio-header {
   color: black;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: calc(33 \ 24);
   letter-spacing: 0.03em;
 }
 
-.link-logo-header {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .logo-studio-header {
+    font-size: 26px;
+    line-height: calc(42 \ 26);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link-logo-header {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-logo-header {
+    margin-right: 93px;
+  }
 }
 
 .footer-logo-studio {
@@ -461,12 +482,26 @@ img {
 .all-nav {
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   list-style: none;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    display: flex;
+  }
 }
 
 .nav-list__item + .nav-list__item {
@@ -505,7 +540,7 @@ img {
   background-color: var(--button-hover-color);
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -17px;
 }
 
 .hero-list {
@@ -566,7 +601,7 @@ img {
 }
 
 .contacts-list {
-  display: flex;
+  display: none;
   list-style: none;
   font-style: normal;
   padding-left: 0px;
@@ -574,8 +609,22 @@ img {
   align-items: center;
 }
 
-.contacts-list__item + .contacts-list__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list__item + .contacts-list__item {
+    margin-left: 50px;
+  }
 }
 
 .contacts-list .contact {
@@ -600,9 +649,16 @@ img {
 
 .contacts-list .contact.link {
   display: flex;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
 }
 
 .contacts-list .contacts-list-adress {
@@ -995,6 +1051,12 @@ img {
   margin: -15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .client-list {
+    flex-wrap: nowrap;
+  }
+}
+
 .client-title {
   text-align: center;
   line-height: 1.17;
@@ -1012,12 +1074,6 @@ img {
 @media screen and (min-width: 768px) {
   .client-list__item {
     width: calc( 100% / 3 - 30px);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client-list__item {
-    width: calc( 100% / 6 - 30px);
   }
 }
 
