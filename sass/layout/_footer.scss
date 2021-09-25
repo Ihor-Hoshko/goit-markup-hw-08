@@ -1,16 +1,21 @@
 .all-footer {
-    background-color: #2f303a;
+    background-color: #2F303A;
     padding-bottom: 60px;
     padding-top: 60px;
   }
-  .all-footer {
-    .container {
-    display: flex;
-    align-items: baseline;}
-  }
+  .all-footer .container {
+      display: block;
+    
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;}}
+  
   .all-footer {
     .contacts-list {
-    margin-top: 20px;}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  margin-bottom: 60px; }
   }
   
   .contacts-footer {
@@ -37,10 +42,6 @@
     }
   }
   
-  .footer-flex {
-    display: flex;
-    justify-content: center;
-  }
   
   
   

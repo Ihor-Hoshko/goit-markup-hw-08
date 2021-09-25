@@ -166,6 +166,12 @@ img {
   letter-spacing: 0.03em;
 }
 
+.link-logo-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -339,6 +345,12 @@ img {
   border: 1px solid #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .input-modal {
+    width: 448px;
+  }
+}
+
 .modal-form-text {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -366,6 +378,12 @@ img {
 
 .textarea-modal:hover, .textarea-modal:focus {
   border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .textarea-modal {
+    width: 448px;
+  }
 }
 
 .modal-form__label {
@@ -443,7 +461,8 @@ img {
 }
 
 .social-address {
-  margin-left: 70px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .address-list {
@@ -711,6 +730,14 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-list {
+    max-width: 1600px;
+    padding-top: 200px;
+    margin-bottom: 200px;
+  }
 }
 
 .hero-list__title {
@@ -1266,18 +1293,27 @@ img {
 }
 
 .all-footer {
-  background-color: #2f303a;
+  background-color: #2F303A;
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .all-footer .container {
-  display: flex;
-  align-items: baseline;
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .all-footer .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .all-footer .contacts-list {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .contacts-footer {
@@ -1302,21 +1338,16 @@ img {
   color: var(--button-hover-color);
 }
 
-.footer-flex {
-  display: flex;
-  justify-content: center;
-}
-
 .contact-form {
   position: relative;
-  width: 570px;
-  min-height: 86px;
+  width: 450px;
+  min-height: 156px;
   margin: 0 auto;
 }
 
 .input-form {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 358px;
   height: 50px;
@@ -1334,7 +1365,6 @@ img {
 
 .input-button {
   position: absolute;
-  right: 0;
   bottom: 0;
   display: flex;
   align-items: center;
