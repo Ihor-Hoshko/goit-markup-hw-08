@@ -1299,6 +1299,20 @@ img {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .all-footer {
+    padding-right: 215px;
+    padding-left: 215px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .all-footer {
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+}
+
 .all-footer .container {
   display: block;
 }
@@ -1324,10 +1338,9 @@ img {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .left-side {
-    margin-left: 76px;
-    margin-right: 165px;
+@media screen and (min-width: 1200px) {
+  .all-footer .contacts-list {
+    margin-bottom: 0;
   }
 }
 
