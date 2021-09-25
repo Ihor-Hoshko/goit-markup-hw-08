@@ -120,7 +120,7 @@ img {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: calc(33 \ 24);
+  line-height: calc(26 / 24);
   letter-spacing: 0.03em;
 }
 
@@ -161,8 +161,8 @@ img {
 .footer-logo-studio {
   color: var(--button-hover-text-color);
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.1;
+  font-size: 24px;
+  line-height: calc(26 / 24);
   letter-spacing: 0.03em;
 }
 
@@ -1303,6 +1303,13 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .all-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .all-footer .container {
     display: flex;
@@ -1315,6 +1322,13 @@ img {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .left-side {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
 }
 
 .contacts-footer {
@@ -1341,10 +1355,19 @@ img {
 
 .contact-form {
   position: relative;
-  max-width: 300px;
+  width: 300px;
   min-height: 156px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 
 .input-form {
@@ -1365,6 +1388,13 @@ img {
   outline: none;
 }
 
+@media screen and (min-width: 768px) {
+  .input-form {
+    width: 450px;
+    left: 0;
+  }
+}
+
 .input-button {
   position: absolute;
   bottom: 0;
@@ -1377,6 +1407,12 @@ img {
   background-color: var(--button-hover-color);
   color: var(--button-hover-text-color);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-button {
+    left: 100px;
+  }
 }
 
 .icon-send {

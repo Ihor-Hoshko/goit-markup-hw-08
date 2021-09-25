@@ -5,6 +5,10 @@
   }
   .all-footer .container {
       display: block;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
     
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -15,9 +19,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  margin-bottom: 60px; }
+    margin-bottom: 60px; }
   }
-  
+  .left-side {
+    @media screen and (min-width: 768px) {
+      margin-left: 76px;
+      margin-right: 165px;
+    }
+  }
   .contacts-footer {
     list-style: none;
     padding-left: 0px;

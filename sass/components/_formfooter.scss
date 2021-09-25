@@ -1,9 +1,17 @@
 .contact-form {
     position: relative;
-    max-width: 300px;
+    width: 300px;
     min-height: 156px;
     margin: 0 auto;
     text-align: center;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+      
+      
+    }
   }
   .input-form {
     position: absolute;
@@ -21,6 +29,10 @@
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
     outline: none;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      left: 0;
+    }
   }
   .input-button {
     position: absolute;
@@ -34,6 +46,9 @@
     background-color: var(--button-hover-color);
     color: var(--button-hover-text-color);
     border-radius: 4px;
+    @media screen and (min-width: 768px) {
+      left: 100px;
+    }
   }
   .icon-send {
     display: block;
