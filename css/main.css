@@ -473,7 +473,7 @@ img {
 }
 
 .social-address {
-  margin: 0 auto;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -901,15 +901,48 @@ img {
 .filter-list-all {
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-left: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.filter-list-all .item + .item {
-  margin-left: 8px;
+@media screen and (min-width: 1200px) {
+  .filter-list-all {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list-all {
+    justify-content: center;
+  }
+}
+
+.filter-list-all .item {
+  margin-right: 8px;
+}
+
+.filter-list-all .item:nth-of-type(4) {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list-all .item:nth-of-type(4) {
+    margin-top: 0;
+  }
+}
+
+.filter-list-all .item:nth-of-type(5) {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list-all .item:nth-of-type(5) {
+    margin-top: 0;
+  }
 }
 
 .filter-list-all .button {
