@@ -17,17 +17,12 @@
 
 .filter-list-all .item {
   margin-right: 8px;
-}
-.filter-list-all .item:nth-of-type(4) {
-  margin-top: 15px;
+  margin-bottom: 15px;
   @media screen and (min-width: 768px) {
-    margin-top: 0;
+    margin-bottom: 0;
   }
-}
-.filter-list-all .item:nth-of-type(5) {
-  margin-top: 15px;
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
