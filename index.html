@@ -197,15 +197,30 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-list__item">
-              <img src="./img/box1.jpg" alt="компьютер" width="370" />
+              <img
+                srcset="./img/work/desk-1x.jpg 1x, ./img/work/desk-2x.jpg 2x"
+                alt="компьютер"
+                width="370"
+              />
               <p class="work-list__overlay">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="work-list__item">
-              <img src="./img/box2.jpg" alt="смартфон" width="370" />
+              <img
+                srcset="./img/work/mob-1x.jpg 1x, ./img/work/mob-2x.jpg 2x"
+                alt="смартфон"
+                width="370"
+              />
               <p class="work-list__overlay">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="work-list__item">
-              <img src="./img/box3.jpg" alt="планшет" width="370" />
+              <img
+                srcset="
+                  ./img/work/design-1x.jpg 1x,
+                  ./img/work/design-2x.jpg 2x
+                "
+                alt="планшет"
+                width="370"
+              />
               <p class="work-list__overlay">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
           </ul>
@@ -216,7 +231,31 @@
           <h2 class="all-team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./img/img.jpg" width="270" alt="фото Игоря" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/mob-ihor-1x.jpg 1x,
+                    ./img/team/mob-ihor-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tabl-ihor-1x.jpg 1x,
+                    ./img/team/tabl-ihor-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/deks-ihor-1x.jpg 1x,
+                    ./img/team/deks-ihor-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img src="./img/team/tabl-ihor-1x.jpg" alt="фото Игоря" />
+              </picture>
+
               <div class="team-list__content">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__description">Product Designer</p>
@@ -253,7 +292,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./img/img1.jpg" width="270" alt="фото Ольги" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/mob-olha-1x.jpg 1x,
+                    ./img/team/mob-olha-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tabl-olha-1x.jpg 1x,
+                    ./img/team/tabl-olha-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/deks-olha-1x.jpg 1x,
+                    ./img/team/deks-olha-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img src="./img/team/deks-olha-1x.jpg" alt="фото Ольги" />
+              </picture>
               <div class="team-list__content">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__description">Frontend Developer</p>
@@ -290,7 +352,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./img/img2.jpg" width="270" alt="фото Николая" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/mob-nikolai-1x.jpg 1x,
+                    ./img/team/mob-nikolai-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tabl-nikolai-1x.jpg 1x,
+                    ./img/team/tabl-nikolai-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/deks-nikolai-1x.jpg 1x,
+                    ./img/team/deks-nikolai-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img src="./img/team/deks-nikolai-1x.jpg" alt="фото Николая" />
+              </picture>
               <div class="team-list__content">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__description">Marketing</p>
@@ -327,7 +412,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./img/img3.jpg" width="270" alt="фото Михаила" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/mob-mihail-1x.jpg 1x,
+                    ./img/team/mob-mihail-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tabl-mihail-1x.jpg 1x,
+                    ./img/team/tabl-mihail-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/deks-mihail-1x.jpg 1x,
+                    ./img/team/deks-mihail-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img src="./img/team/deks-mihail-1x.jpg" alt="фото Михаила" />
+              </picture>
               <div class="team-list__content">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__description">UI Designer</p>

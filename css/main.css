@@ -667,6 +667,7 @@ img {
   top: 0;
   right: 0;
   padding: 10px 15px 48px 40px;
+  z-index: 1;
 }
 
 .mobile-menu.is-hidden {
@@ -776,7 +777,7 @@ img {
   list-style: none;
   text-align: center;
   padding: 118px 60px 118px 60px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Imgmin.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/mob-hero-1x.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -784,11 +785,19 @@ img {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-list {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/tabl-hero-1x.jpg);
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-list {
     max-width: 1600px;
     padding-top: 200px;
     margin-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/deks-hero-1x.jpg);
   }
 }
 
@@ -1125,6 +1134,7 @@ img {
 
 .advantage-list__item {
   max-width: 450px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
