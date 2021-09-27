@@ -759,7 +759,7 @@ img {
 }
 
 .menu-social__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .menu-social__item:not(:last-child) .menu-social__link {
