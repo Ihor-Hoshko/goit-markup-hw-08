@@ -1,10 +1,13 @@
 .contact-form {
-    position: relative;
-    width: 300px;
-    min-height: 156px;
-    margin: 0 auto;
-    text-align: center;
-    @media screen and (min-width: 768px) {
+  position: relative;
+  width: 300px;
+  min-height: 156px;
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -12,64 +15,66 @@
     @media screen and (min-width: 1200px) {
       flex-direction: row;
       width: 570px;
-    } 
     }
   }
-  .input-form {
-    position: absolute;
-    top: 36px;
+}
+.input-form {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  outline: none;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
     left: 0;
-    width: 290px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: #2f303a;
-    margin-right: 12px;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
-    outline: none;
-    @media screen and (min-width: 768px) {
-      width: 450px;
-      left: 0;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 358px;
-    }
   }
-  .input-button {
-    position: absolute;
-    bottom: 0;
-    left: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    background-color: var(--button-hover-color);
-    color: var(--button-hover-text-color);
-    border-radius: 4px;
-    @media screen and (min-width: 768px) {
-      left: 100px;
-    }
-    @media screen and (min-width: 1200px) {
-      right: 0;
-      left: unset;
-      bottom: unset;
-      top: 36px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
-  .icon-send {
-    display: block;
-    margin-left: 10px;
-    fill: var(--button-hover-text-color);
+}
+.input-button {
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--button-hover-color);
+  color: var(--button-hover-text-color);
+  border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    left: 100px;
   }
-  .text-for-input {
-    color: var(--button-hover-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    
+  @media screen and (min-width: 1200px) {
+    right: 0;
+    left: unset;
+    bottom: unset;
+    top: 36px;
   }
+}
+.icon-send {
+  display: block;
+  margin-left: 10px;
+  fill: var(--button-hover-text-color);
+}
+.text-for-input {
+  color: var(--button-hover-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+}

@@ -220,7 +220,7 @@ img {
   display: flex;
   padding: 40px 10px 40px 10px;
   height: 609px;
-  width: 100%;
+  width: 320px;
   background-color: var(--button-hover-text-color);
   position: absolute;
   top: 50%;
@@ -1550,6 +1550,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 480px) {
+  .contact-form {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact-form {
     display: flex;
@@ -1582,6 +1588,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   outline: none;
+}
+
+@media screen and (min-width: 480px) {
+  .input-form {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
