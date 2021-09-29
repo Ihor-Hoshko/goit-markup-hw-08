@@ -190,7 +190,12 @@ img {
 .link-logo-footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-logo-footer {
+    justify-content: start;
+  }
 }
 
 .backdrop {
@@ -518,6 +523,12 @@ img {
   justify-content: center;
   padding-left: 0px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list {
+    margin-bottom: 0;
+  }
 }
 
 .address-title {
@@ -1521,6 +1532,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-footer {
+    margin-top: 20px;
+  }
+}
+
 .contacts-footer .contacts-list__item + .contacts-list__item {
   margin-top: 9px;
   margin-left: 0px;
@@ -1541,6 +1558,12 @@ img {
 @media screen and (min-width: 768px) {
   .contacts-list__item {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list__item {
+    text-align: left;
   }
 }
 
