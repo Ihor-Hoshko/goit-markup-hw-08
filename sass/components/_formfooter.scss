@@ -12,10 +12,12 @@
     flex-direction: column;
     width: 450px;
     margin: 0 auto;
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
-      width: 570px;
-    }
+  }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    width: 570px;
+
+    min-height: 86px;
   }
 }
 .input-form {
@@ -27,7 +29,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
-  margin-right: 12px;
+  margin-right: 11px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -43,12 +45,14 @@
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+    bottom: 0;
+    left: 0;
   }
 }
 .input-button {
   position: absolute;
   bottom: 0;
-  left: 45px;
+  right: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,10 +65,9 @@
     left: 100px;
   }
   @media screen and (min-width: 1200px) {
+    bottom: 0;
     right: 0;
     left: unset;
-    bottom: unset;
-    top: 36px;
   }
 }
 .icon-send {
@@ -76,5 +79,8 @@
   color: var(--button-hover-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: calc(16 / 14);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }

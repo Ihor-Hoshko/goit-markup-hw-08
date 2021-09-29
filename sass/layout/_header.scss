@@ -12,8 +12,6 @@
 .all-nav {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  margin-top: 16px;
 }
 
 .nav-list {
@@ -62,7 +60,7 @@
     background-color: var(--button-hover-color);
     content: "";
     position: absolute;
-    bottom: -17px;
+    bottom: -1px;
   }
 }
 .open-button {

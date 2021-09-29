@@ -1,6 +1,10 @@
 .social-address {
   margin-left: auto;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 .address-list {
   display: flex;
@@ -13,7 +17,7 @@
   color: var(--button-hover-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: calc(16 / 14);
   justify-content: center;
   margin-bottom: 20px;
 }
