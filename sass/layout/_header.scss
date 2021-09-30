@@ -170,6 +170,7 @@
 .menu-socials {
   display: flex;
   padding-left: 0;
+  margin: 0 auto;
 }
 .menu-social__item {
   &:not(:last-child) {
@@ -182,9 +183,13 @@
 }
 .menu-social__link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: calc(22 / 18);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   color: var(--button-hover-color);
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
 }
 .contacts-social {
   position: fixed;
